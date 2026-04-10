@@ -1,6 +1,6 @@
 //TODO: Não usar NODEJS ou implementar algum tipo de servidor.
 //TODO: Não usar nenhuma dependencia externa. Reinventar a roda se for preciso.
-import { carrosel_list, carrosel_pointer, move_carrosel,update_carrosel } from "./carrosel"
+import { carrosel_list, carrosel_pointer, move_carrosel,update_carrosel } from "./carrosel.js"
 let toggle = false
 let dark_theme = true
 
