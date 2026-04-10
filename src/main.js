@@ -1,10 +1,9 @@
 //TODO: Não usar NODEJS ou implementar algum tipo de servidor.
 //TODO: Não usar nenhuma dependencia externa. Reinventar a roda se for preciso.
-import { carrosel_list, carrosel_pointer, move_carrosel,update_carrosel } from "./carrosel.js"
 let toggle = false
 let dark_theme = true
 
-/* let img1 = "../media/img/lain4.gif"
+let img1 = "../media/img/lain4.gif"
 let img2 = "../media/img/lain3.gif"
 let img3 = "../media/img/lain5.gif"
 let img4 = "../media/img/lain6.gif"
@@ -25,7 +24,7 @@ async function update_carrosel(image_id) {
     carrosel_pointer = image_id
     let image_frame = document.getElementById("i_foto")
     image_frame.src = carrosel_list[image_id]
-} */
+}
 //* TOFIX: This name for ths function makes no sense and it sucks. 
 function create_template() {
     const body = document.getElementById("i_body")
