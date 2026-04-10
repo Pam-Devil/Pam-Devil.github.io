@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <script src="../../src/main.js"></script>
+    <title>Serviços</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <nav class="nav-bar">
+                <a href="../index.html">
+                    home
+                </a>
+                <a href="./servicos.html">
+                    servicos
+                </a>
+                <a href="./curriculo.html">
+                    Curriculos
+                </a>
+                <a href="./contato.html">
+                    Contato
+                </a>
+                <a href="./github.html">
+                    Github
+                </a>
+            </nav>
+            <div class="theme_button_container">
+                <button type="button" onclick="create_template()">Template Toggle</button>
+                <button class="theme-button" id="i_theme_button"
+                    onclick="call_event('change_theme',{})">theme_swap</button>
+            </div>
+        </div>
+    </header>
+
+    <section id="servicos">
+        <h2>Serviços</h2>
+
+        <p>
+            Ofereço serviços de desenvolvimento de HomePages modernas,
+            responsivas e otimizadas para diferentes necessidades.
+        </p>
+
+        <table border="1" style="background: black; color: white;">
+            <thead>
+                <tr>
+                    <th>Tipo de Serviço</th>
+                    <th>Descrição</th>
+                    <th>Preço</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Página Estática</td>
+                    <td>
+                        Desenvolvimento de site utilizando HTML e CSS.
+                        Ideal para páginas institucionais simples, sem interação com banco de dados.
+                    </td>
+                    <td>R$ 5000,00</td>
+                </tr>
+
+                <tr>
+                    <td>Página Dinâmica</td>
+                    <td>
+                        Desenvolvimento com interatividade usando JavaScript, HTMX,
+                        ou integração com backend simples em NodeJS ou Golang.
+                        Ideal para formulários, dashboards básicos e sistemas interativos.
+                    </td>
+                    <td>R$ 8000,00</td>
+                </tr>
+
+                <tr>
+                    <td>Página Super Avançada</td>
+                    <td>
+                        Desenvolvimento completo com tecnologias modernas,
+                        integração com APIs, banco de dados, autenticação de usuários
+                        e alto nível de personalização.
+                    </td>
+                    <td>R$ 20000,00</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+</body>
+
+</html>

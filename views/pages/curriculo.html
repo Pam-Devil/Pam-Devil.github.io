@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="../../src/main.js"></script>
+    <link rel="stylesheet" href="../../styles/style.css">
+    <title>Currículo - Jonatas Cardoso</title>
+</head>
+
+<body>
+    <header>
+        <div class="header_container">
+            <nav class="nav-bar" >
+                <a href="../index.html">
+                    home
+                </a>
+                <a href="./servicos.html">
+                    servicos
+                </a>
+                <a href="./curriculo.html">
+                    Curriculos
+                </a>
+                <a href="./contato.html">
+                    Contato
+                </a>
+                <a href="./github.html">
+                    Github
+                </a>
+            </nav>
+            <div class="theme_button_container">
+                <button type="button" onclick="create_template()">Template Toggle</button>
+                <button class="theme-button" id="i_theme_button"
+                    onclick="call_event('change_theme',{})">theme_swap</button>
+            </div>
+        </div>
+    </header>
+    <section>
+        <h1>Jonatas Cardoso Correa</h1>
+        <p>Email: jonatascardoso0573@gmail.com</p>
+        <p>Telefone: (27) 99201-2431</p>
+    </section>
+
+    <main id="curriculo">
+        <h2>Currículo</h2>
+
+        <article>
+            <h3>Resumo Profissional</h3>
+            <p>
+                Desenvolvedor junior com conhecimentos em HTML, CSS e JavaScript(Typescript),
+                com experiência na criação de interfaces web modernas e responsivas, servidores e REST API's.
+                E alta facilidade em aprender novas tecnologias e resolver problemas.
+            </p>
+        </article>
+
+        <article>
+            <h3>Experiência Profissional</h3>
+
+            <div class="job">
+                <h4>Desenvolvedor Front-End - Freelancer</h4>
+                <p><strong>Período:</strong> 2024 - Atual</p>
+                <ul>
+                    <li>Criação de landing pages responsivas para a <strong>VASP</strong></li>
+                    <li>Otimização de performance de páginas web</li>
+                    <li>Implementação de layouts modernos</li>
+                </ul>
+            </div>
+
+            <div class="job">
+                <h4>Projetos Acadêmicos</h4>
+                <p><strong>Período:</strong> 2023 - 2024</p>
+                <ul>
+                    <li>Desenvolvimento de sistemas simples em HTML e JavaScript para a <strong>VASP</strong></li>
+                </ul>
+            </div>
+        </article>
+
+        <article>
+            <h3>Habilidades</h3>
+            <ul>
+                <li>HTML5</li>
+                <li>CSS3</li>
+                <li>JavaScript e Typescript</li>
+                <li>Golang e Elixir</li>
+                <li>HTMX e design HATEOAS</li>
+                <li>Git e GitHub</li>
+                <li>ECS e Data Driven Design</li>
+                <li>Comfy Web UI</li>
+            </ul>
+        </article>
+
+        <article>
+            <h3>Formação</h3>
+            <p>
+                Curso de Desenvolvimento Web<br>
+                Instituição: auto didata <br>
+                Período: 2021 - Atual
+            </p>
+        </article>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 - Jonatas Cardoso</p>
+    </footer>
+
+</body>
+
+</html>

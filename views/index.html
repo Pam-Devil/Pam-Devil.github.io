@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <script  type="module"  src="../src/main.js"></script>
+    <link rel="stylesheet" href="../styles/style.css">
+</head>
+
+<body class="dark bimbo slut" id="i_body">
+    <header>
+        <div class="header_container">
+            <nav class="nav-bar">
+                <a href="./index.html">
+                    home
+                </a>
+                <a href="./pages/servicos.html">
+                    servicos
+                </a>
+                <a href="./pages/curriculo.html">
+                    Curriculos
+                </a>
+                <a href="./pages/contato.html">
+                    Contato
+                </a>
+                <a href="./pages/github.html">
+                    Github
+                </a>
+            </nav>
+            <div class="theme_button_container">
+                <button type="button" onclick="create_template()">Template Toggle</button>
+                <button class="theme-button" id="i_theme_button"
+                    onclick="call_event('change_theme',{})">theme_swap</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="hero decorative_image" id="decorative_image">
+            <h1>I dont know what i'm doing anymore</h1>
+            <h1>help</h1>
+            <form action="">
+                <input type="radio" name="op" id="op1" value="1" onclick="call_event('radio_click',{value:0})">
+                <input type="radio" name="op" id="op2" value="2" onclick="call_event('radio_click',{value:1})">
+                <input type="radio" name="op" id="op3" value="3" onclick="call_event('radio_click',{value:2})">
+                <input type="radio" name="op" id="op4" value="4" onclick="call_event('radio_click',{value:3})">
+            </form>
+            <template id="i_template">
+
+                <div class="card" id="i_card">
+                    <h1>Template</h1>
+                    <p style="color: white;">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Aperiam
+                        sapiente
+                        cum quo dolorem
+                        voluptatem
+                        similique nemo autem tenetur totam quis, a deserunt praesentium reiciendis? Ipsam eius
+                        accusamus
+                        dolores
+                        in perspiciatis.
+                        Laborum ducimus voluptas magnam harum obcaecati, dolor sapiente aut molestias nam tempora
+                        ex,
+                        rerum
+                        ea
+                        expedita repellat ab aspernatur! Quidem eligendi molestias ipsum tempora architecto,
+                        incidunt
+                        aliquam
+                        voluptates cum repellendus!
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cum animi aperiam nihil modi odit.
+                        Explicabo a nemo similique eum odio, porro amet at sint, hic voluptatem aliquam perspiciatis
+                        facere voluptate.
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Minima labore, excepturi
+                        exercitationem distinctio aliquam inventore sit quas expedita dolor consequatur est nam
+                        blanditiis facere aliquid fugiat. Culpa ipsam ratione inventore.
+                        Cumque aperiam numquam recusandae consequuntur nesciunt maiores nostrum fugiat quo
+                        reiciendis
+                        quis perferendis sunt, dolorum illum error consectetur exercitationem quisquam aliquam
+                        perspiciatis molestiae, earum dolorem! Dolore at porro sed quas?
+                        Fuga fugiat reiciendis cum. Iure, vitae voluptate enim perferendis tempore debitis inventore
+                        eligendi qui laudantium minima ipsam, cum assumenda quas placeat quis voluptatem excepturi
+                        asperiores quibusdam sapiente pariatur sunt voluptatum!
+                        Iusto rerum corporis in autem commodi voluptates? Aspernatur blanditiis dolorum officia
+                        saepe
+                        illo vel, dolore deserunt nulla quidem libero. Unde eius inventore suscipit hic, laboriosam
+                        magnam. Quae debitis necessitatibus nemo.
+                        Fuga temporibus eligendi harum officiis ullam. Sunt voluptatum vero, libero asperiores
+                        assumenda
+                        nemo quidem voluptatibus amet ad odit ratione possimus natus voluptate, praesentium tempora
+                        cupiditate molestias esse. Nostrum, cupiditate quo.
+                        Qui sapiente enim labore. Molestias quis eligendi quia magni delectus magnam soluta
+                        laudantium
+                        in? Ex labore, iure quae minus aspernatur inventore fuga quis expedita eligendi deleniti
+                        quibusdam voluptatum, dolore sequi!
+                        At eveniet ea nulla? Et quia reprehenderit culpa blanditiis quis quidem accusamus
+                        consequatur
+                        soluta consequuntur, ab ullam, expedita esse necessitatibus. Ea asperiores eius dolor
+                        explicabo
+                        rem illo deleniti quia nihil?
+                        Voluptatum necessitatibus totam magni reiciendis? Fugit ad reiciendis dolores assumenda
+                        ipsum a
+                        at illum, autem asperiores doloribus aut unde inventore impedit nemo vero, quia ipsam
+                        recusandae
+                        illo tenetur excepturi tempora?
+                        Maxime delectus dolores accusamus consectetur placeat illum vero ullam tenetur deserunt,
+                        ipsum
+                        debitis porro quas assumenda sint voluptatibus maiores voluptatum facilis neque? Obcaecati,
+                        deleniti ad iure repellendus placeat earum mollitia.</p>
+                </div>
+            </template>
+            <button type="button" onclick="call_event('click')">swap</button>
+        </section>
+        <section class="resto">
+            <section class="about_me">
+               <img  src="../media/img/lain2.gif" alt="Eu" id="i_foto">
+               <article>
+                <h1>Quem sou eu?</h1>
+                <p>
+                    Eu sou uma pessoa simples, extremamente curiosa e totalmente insatisfeita em saber as coisas superficialmente. 
+                    E tal busca pelo conhecimento desenfreado é o que me trouxe até onde estou. 
+                    Minha historia ainda não tem muito a ser dita, afinal nada muito grandioso aconteceu em minha vida.
+                    E aquilo que aconteceu, eu prefiro manter privado por ser pessoal e eu apreciar minha privacidade. 
+                </p>
+               </article> 
+            </section>
+            <section>
+                <h2>
+                    Meus Objetivos:
+                </h2>
+                <p>
+                    Meus objetivos de vida são bem simples, mas dificeis de serem realizados.
+                    Desejo uma vida tranquila, quero ser capaz de trabalhar regularmente apenas o necessário para que eu possa
+                    juntar um bom patrimonio capaz de gerar uma boa renda passiva. 
+                    E depois disso, poder viver em cima destes dividendos, ainda trabalhando, claro.
+                    mas não mais ter o trabalho como uma obrigação para viver.
+                    trabalhar não por necessidade e sobrevivência, mas sim porque quero
+                    exercer a função pois é algo que eu gosto. 
+                </p>
+            </section>
+            <hr>
+           <section>
+            <h2>Habilidades e Capacidades</h2>
+            <p>Como alguém curioso e fascinado em aprender, acabei me tornando auto-didata em muita coisa... 
+                Algumas a um nivel tão aprofundado que até me assusta. Pois meu hiperfoco não me deixa largar um novo apreendizado, até que eu me canse dele.
+                com isso eu adquiri certas capacidades: 
+                <ul>
+                    <li>
+                        <h3>Edição de Imagens (Photoshop):</h3>
+                        <p>Sou altamente hábil em ferramentas como o photoshop, já chegando a fazer edições de nivel profissional e participar de workshops
+                            complexos para empresas reais. Mas eu tenho photoshop mais como um hobbie.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Mix e Master de audio:</h3>
+                        <p>Acabei aprendendo a usar o fruitloops mais do que eu realmente precisava...</p>
+                    </li>
+                    <li>
+                        <h3>Matemática Abstrata:</h3>
+                        <p>Minha maior obceção com toda certeza é estudar matemática.
+                            Quanto mais abstrata e avançada, mais eu fico empolgado de aprender. 
+                            Meu topico favorito hoje é teoria espectral de operadores, 
+                            teoria de tensores e geometria diferencial. 
+                            Já passei muito tempo ajudando a resolver questões ou voluntariamente mentorando alunos de graduação e mestrado em matemática em forums como o Reddit e 4chan.
+                        </p>
+                    </li>
+                    <li>
+                        <h3>Machine Learning e Inteligencia Artificial:</h3>
+                        <p>Desde o inicio do surgimento do stable diffusion eu venho aprendendo, estudando e criando novos workflows para stable diffusion e comfyui.
+                            Devido a isso tenho bastante intimidade com modelos de geração e conheço todas suas reais limitações e incompetencias.
+                            Atualmente estou trabalhando em desenvolver um novo método de amostragem difusa em blocos, mas mantendo o contexto geral da imagem através de self-attention.
+                        </p>
+                    </li>
+                </ul>
+            </p>
+           </section>
+           <section>
+            <h2>Meus Hobbies:</h2>
+            <p>
+                Meus hobbies se resumem a fazer origami, aprender coisas novas, perder tempo com projetos inuteis e jogar jogos ridiculamente dificeis.
+<br>
+                como....
+            </p>
+
+            <h3>Touhou:</h3>
+            <img class="img-touhou" src="../media/img/touhou.gif" alt="Touhou Gameplay" width="800" height="600">
+
+            <h3>OSU:</h3>
+            <img class="img-osu" src="../media/img/osu.gif" alt="OSU Gameplay" width="800" height="600">
+
+            <h3>Meu origami favorito:</h3>
+            <h4>A Violinista - <strong>Hojyo Takashi</strong></h4>
+            <img class="img-violinist" src="../media/img/violinist.jpg" alt="Origami - A Violista por Hojyo Takashi" width="800" height="600">
+        </section>
+        <section>
+            <h2> Com o que quero trabalhar para o futuro?</h2>
+            <p>Eu gosto de programação no geral. Apesar de detestar CSS, ta mais pra uma "skill issue" minha mesmo.
+                Mas eu particularmente gosto de programação em mais baixo nível, ou mexer com modelos de IA, mesmo que eu não goste de python.
+                Gostaria de trabalhar com algo envolvendo shaders, optimização de uso de memória, etc. 
+            </p>
+        </section>
+            <article>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae perferendis ullam possimus iste
+                    qui!
+                    Nulla, iste possimus. Corrupti, accusamus cum? Natus architecto dolorum dolor veniam, mollitia
+                    tempore
+                    possimus quo cupiditate.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil itaque minima incidunt tempore quas
+                    facilis
+                    molestias doloribus totam voluptates eos, ut temporibus ratione. Soluta similique, ducimus ratione
+                    molestias
+                    quia sequi.
+                </p>
+            </article>
+        </section>
+        </section>
+    </main>
+    <footer>
+        <button type="button" onclick="create_template()">Template Toggle</button>
+    </footer>
+</body>
+
+</html>

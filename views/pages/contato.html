@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../styles/style.css">
+    <script src="../../src/main.js"></script>
+    <title>Contato - Github</title>
+</head>
+<body>
+<header>
+        <div class="header_container">
+            <nav class="nav-bar" >
+                <a href="../../views/index.html">
+                    home
+                </a>
+                <a href="./servicos.html">
+                    servicos
+                </a>
+                <a href="./curriculo.html">
+                    Curriculos
+                </a>
+                <a href="./contato.html">
+                    Contato
+                </a>
+                <a href="./github.html">
+                    Github
+                </a>
+            </nav>
+            <div class="theme_button_container">
+                <button type="button" onclick="create_template()">Template Toggle</button>
+                <button class="theme-button" id="i_theme_button"
+                    onclick="call_event('change_theme',{})">theme_swap</button>
+            </div>
+        </div>
+    </header>
+<main id="contato">
+    <h2>Contato</h2>
+
+    <form action="#" method="post">
+
+        <div>
+            <label for="nome">Nome Completo:</label><br>
+            <input type="text" id="nome" name="nome" required>
+        </div>
+
+        <div>
+            <label for="telefone">Telefone:</label><br>
+            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
+        </div>
+
+        <div>
+            <label for="email">E-mail:</label><br>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <p>Tipo de Cliente:</p>
+
+            <input type="radio" id="pf" name="tipo_cliente" value="pf" required>
+            <label for="pf">Pessoa Física</label>
+
+            <input type="radio" id="pj" name="tipo_cliente" value="pj">
+            <label for="pj">Pessoa Jurídica</label>
+        </div>
+
+        <div>
+            <label for="horario">Melhor horário para contato:</label><br>
+            <input type="time" id="horario" name="horario">
+        </div>
+
+        <div>
+            <label for="servico">Tipo de serviço desejado:</label><br>
+            <select id="servico" name="servico" required>
+                <option value="">Selecione...</option>
+                <option value="static">Página Estática</option>
+                <option value="dynamic">Página Dinâmica</option>
+                <option value="advanced">Página Super Avançada</option>
+            </select>
+        </div>
+
+        <div>
+            <p>Funcionalidades desejadas:</p>
+
+            <input type="checkbox" id="responsivo" name="features" value="responsivo">
+            <label for="responsivo">Design Responsivo</label><br>
+
+            <input type="checkbox" id="animacoes" name="features" value="animacoes">
+            <label for="animacoes">Animações</label><br>
+
+            <input type="checkbox" id="escalabilidade" name="features" value="escalabilidade">
+            <label for="escalabilidade">Escalabilidade</label><br>
+
+            <input type="checkbox" id="integracao" name="features" value="integracao">
+            <label for="integracao">Integração com API</label>
+        </div>
+
+        <div>
+            <label for="descricao">Descrição do projeto:</label><br>
+            <textarea id="descricao" name="descricao" rows="10" cols="50" placeholder="Descreva o que você precisa..."></textarea>
+        </div>
+
+        <div>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar</button>
+        </div>
+    </form>
+</main> 
+    
+   
+</body>
+</html>
