@@ -22,7 +22,7 @@ async function move_carrosel(carrosel_list) {
 //* TOFIX: Does this needs to be async?... i feel like it does?
 async function update_carrosel(image_id) {
     carrosel_pointer = image_id
-    let image_frame = document.getElementById("i_foto")
+    let image_frame = document.getElementById("hero_i_foto")
     image_frame.src = carrosel_list[image_id]
 }
 //* TOFIX: This name for ths function makes no sense and it sucks. 
