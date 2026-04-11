@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,10 +8,11 @@
     <script src="../../src/main.js"></script>
     <title>Contato - Github</title>
 </head>
+
 <body>
-<header>
+    <header>
         <div class="header_container">
-            <nav class="nav-bar" >
+            <nav class="nav-bar">
                 <a href="../../index.html">
                     home
                 </a>
@@ -34,79 +36,103 @@
             </div>
         </div>
     </header>
-<main id="contato">
-    <h2>Contato</h2>
+    <main id="contato" style="padding-top: 4rem;">
+        <h2>Contato</h2>
 
-    <form action="#" method="post">
+        <form action="#" method="post">
+            <table border="1">
 
-        <div>
-            <label for="nome">Nome Completo:</label><br>
-            <input type="text" id="nome" name="nome" required>
-        </div>
+                <thead>
+                    <tr>
+                        <th colspan="2">Formulário de Contato</th>
+                    </tr>
+                </thead>
 
-        <div>
-            <label for="telefone">Telefone:</label><br>
-            <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required>
-        </div>
+                <tbody>
 
-        <div>
-            <label for="email">E-mail:</label><br>
-            <input type="email" id="email" name="email" required>
-        </div>
+                    <tr>
+                        <td><label for="nome">Nome Completo:</label></td>
+                        <td><input type="text" id="nome" name="nome" required></td>
+                    </tr>
 
-        <div>
-            <p>Tipo de Cliente:</p>
+                    <tr>
+                        <td><label for="telefone">Telefone:</label></td>
+                        <td><input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" required></td>
+                    </tr>
 
-            <input type="radio" id="pf" name="tipo_cliente" value="pf" required>
-            <label for="pf">Pessoa Física</label>
+                    <tr>
+                        <td><label for="email">E-mail:</label></td>
+                        <td><input type="email" id="email" name="email" required></td>
+                    </tr>
 
-            <input type="radio" id="pj" name="tipo_cliente" value="pj">
-            <label for="pj">Pessoa Jurídica</label>
-        </div>
+                    <tr>
+                        <td>Tipo de Cliente:</td>
+                        <td>
+                            <input type="radio" id="pf" name="tipo_cliente" value="pf" required>
+                            <label for="pf">Pessoa Física</label>
 
-        <div>
-            <label for="horario">Melhor horário para contato:</label><br>
-            <input type="time" id="horario" name="horario">
-        </div>
+                            <input type="radio" id="pj" name="tipo_cliente" value="pj">
+                            <label for="pj">Pessoa Jurídica</label>
+                        </td>
+                    </tr>
 
-        <div>
-            <label for="servico">Tipo de serviço desejado:</label><br>
-            <select id="servico" name="servico" required>
-                <option value="">Selecione...</option>
-                <option value="static">Página Estática</option>
-                <option value="dynamic">Página Dinâmica</option>
-                <option value="advanced">Página Super Avançada</option>
-            </select>
-        </div>
+                    <tr>
+                        <td><label for="horario">Melhor horário:</label></td>
+                        <td><input type="time" id="horario" name="horario"></td>
+                    </tr>
 
-        <div>
-            <p>Funcionalidades desejadas:</p>
+                    <tr>
+                        <td><label for="servico">Serviço:</label></td>
+                        <td>
+                            <select id="servico" name="servico" required>
+                                <option value="">Selecione...</option>
+                                <option value="static">Página Estática</option>
+                                <option value="dynamic">Página Dinâmica</option>
+                                <option value="advanced">Página Super Avançada</option>
+                            </select>
+                        </td>
+                    </tr>
 
-            <input type="checkbox" id="responsivo" name="features" value="responsivo">
-            <label for="responsivo">Design Responsivo</label><br>
+                    <tr>
+                        <td>Funcionalidades:</td>
+                        <td>
+                            <input type="checkbox" id="responsivo" name="features" value="responsivo">
+                            <label for="responsivo">Responsivo</label><br>
 
-            <input type="checkbox" id="animacoes" name="features" value="animacoes">
-            <label for="animacoes">Animações</label><br>
+                            <input type="checkbox" id="animacoes" name="features" value="animacoes">
+                            <label for="animacoes">Animações</label><br>
 
-            <input type="checkbox" id="escalabilidade" name="features" value="escalabilidade">
-            <label for="escalabilidade">Escalabilidade</label><br>
+                            <input type="checkbox" id="escalabilidade" name="features" value="escalabilidade">
+                            <label for="escalabilidade">Escalabilidade</label><br>
 
-            <input type="checkbox" id="integracao" name="features" value="integracao">
-            <label for="integracao">Integração com API</label>
-        </div>
+                            <input type="checkbox" id="integracao" name="features" value="integracao">
+                            <label for="integracao">Integração API</label>
+                        </td>
+                    </tr>
 
-        <div>
-            <label for="descricao">Descrição do projeto:</label><br>
-            <textarea id="descricao" name="descricao" rows="10" cols="50" placeholder="Descreva o que você precisa..."></textarea>
-        </div>
+                    <tr>
+                        <td><label for="descricao">Descrição:</label></td>
+                        <td>
+                            <textarea id="descricao" name="descricao" rows="8" cols="40"></textarea>
+                        </td>
+                    </tr>
 
-        <div>
-            <button type="submit">Enviar</button>
-            <button type="reset">Limpar</button>
-        </div>
-    </form>
-</main> 
-    
-   
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="2" style="text-align:center;">
+                            <button type="submit">Enviar</button>
+                            <button type="reset">Limpar</button>
+                        </td>
+                    </tr>
+                </tfoot>
+
+            </table>
+        </form>
+    </main>
+
+
 </body>
+
 </html>

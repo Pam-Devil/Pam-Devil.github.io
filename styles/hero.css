@@ -1,0 +1,103 @@
+.main_image {
+    border: green 2px solid;
+}
+
+
+
+main .hero {
+    position: relative;
+    border: red solid 2px;
+    /* porque? serio, POR QUE ESSA CRIAÇÂO DOS INFERNOS 
+    NAO TEM UM COMPILADOR???????????????? 
+    TOLERANTE A ERROS È MINHA TROLHA,
+    CSS ERA PRA SER COMPILADO POR NATUREZA, 
+    GRITE MEUS ERROS NA MINHA CARA,
+    ANTES DE ME FAZER DE IDIOTA POR MAIS DE DUAS HORAS
+    DUAS HORAS POR CAUSA DE UM ESPAÇO!!!!!
+    VAI TOMAR NO CU
+    PORRAAAAAA */
+    /* NOTE: Nunca mais, NUNCA MAIS esqueça de baixar um linter.
+    NOTE: Nunca mais mexa em CSS sem a porra de um linter! */
+    /* NOTE: A porra do linter não funciona sem um servidor node */
+    /* NOTE: Me mate */
+    width: 100%;
+    background-size: cover;
+    height: 100dvh;
+    overflow:hidden;
+}
+
+.text-overlay {
+  position: absolute;
+  width: 50%;
+  height: auto;
+  inset: 0;
+  z-index: 2;
+
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.8),
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0)
+  );
+  backdrop-filter: blur(3px);
+}
+
+.hero img{
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.hero_button_overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    pointer-events: none;
+    z-index: 2;        
+}
+
+.hero_button_overlay * {
+    pointer-events: auto;
+}
+
+.hero_radio {
+    position: absolute;
+    bottom: 0.5em;
+    left: 0;
+    right: 0;
+    display: flex;
+    z-index: 3;
+    justify-content: center;
+}
+
+.hero-swap-button {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.hero-swap-button:hover {
+    z-index: 1000000;
+    height: 100%;
+    width: 4rem;
+    background-color: burlywood;
+}
+.hero-main-container {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    z-index: 3;
+    height: 100%;
+    max-width: 50%;
+    margin: 4rem;
+    padding-bottom: 15rem;
+    padding-left: 1rem;
+}
+.hero-main-container h1, .hero-main-container h2 {
+   margin-top: 0;
+   margin-bottom: 0.2em; 
+}

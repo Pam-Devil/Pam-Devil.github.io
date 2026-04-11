@@ -1,18 +1,77 @@
+:root {
+  /* ===== BACKGROUND ===== */
+  --bg: #05070d;
+  --bg-soft: #0b0f1a;
+  --bg-elevated: #101827;
+
+  /* ===== TEXT ===== */
+  --text: #c9f7ff;
+  --text-dim: #7aa6b8;
+  --text-faint: #3c5563;
+
+  /* ===== CRT / GREEN SIGNAL ===== */
+  --primary: #39ff88;
+  --primary-dim: #1fae66;
+  --primary-glow: rgba(57, 255, 136, 0.35);
+
+  /* ===== BLUE / DIGITAL ===== */
+  --secondary: #4aa3ff;
+  --secondary-dim: #2d6fb3;
+
+  /* ===== ACCENTS (glitch / warning) ===== */
+  --accent: #b86cff;
+  --danger: #ff3b6b;
+
+  /* ===== BORDERS ===== */
+  --border: rgba(201, 247, 255, 0.12);
+  --border-strong: rgba(57, 255, 136, 0.25);
+
+  /* ===== SHADOW / GLOW ===== */
+  --glow: 0 0 12px rgba(57, 255, 136, 0.35);
+  --glow-strong: 0 0 25px rgba(57, 255, 136, 0.6);
+
+  /* ===== TYPOGRAPHY ===== */
+  --font-main: "Noto Sans JP", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+  --font-glitch: "VT323", monospace;
+
+  /* ===== SPACING ===== */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 16px;
+  --space-4: 24px;
+  --space-5: 40px;
+
+  /* ===== RADIUS ===== */
+  --radius-sm: 6px;
+  --radius-md: 12px;
+  --radius-lg: 20px;
+}
+
 html,
 body {
     height: 100%;
 }
 
-body {
-    --primary-color: rgb(230, 154, 154);
-    --background-image: url("https://i.redd.it/s59mnjg6wvqa1.gif");
-    --lain: url("../media/img/lain2.gif");
+h1, .glow {
+  color: var(--primary);
+  text-shadow: var(--glow);
 }
 
+/* Tema de Cores: */
+
 body.dark_mode {
-    --background-image: url("https://64.media.tumblr.com/dd5096315684d589f40fa818be6c9603/9b73e870e3d0d752-71/s1280x1920/af5e92acba52036e1fe8b9a4fb3507d433d4de14.gif");
-    --primary-color: black;
+    background-color: var(--bg);
+    --primary-color: var(--text);
+    --background: var(--bg);
+    --highlight: var(--primary);
+    --font-glow: var(--primary-dim);
     --lain: url("../media/img/lain3.gif");
+    color: var(--primary-color);
+}
+
+body.dark_mode li {
+    color: var(--danger);
 }
 
 
@@ -21,99 +80,35 @@ body {
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.5;
-    background-color: rgb(63, 53, 80);
-    background-image: var(--background-image);
+    background-color: var(--text-dim);
+    color: var(--bg-elevated);
     background-size: cover;
 }
 
-header {
-    border: green solid 1px;
-    margin-top: 0;
-    width: 100%;
-    height: 4rem;
-    position: fixed;
-    z-index: 1000;
-    top: 0;
-    display: flex;
-    justify-content: center;
+body.dark_mode p{
+    color: var(--primary-color);
 }
-
-.header_container {
-    border: rgb(159, 231, 159) solid 1px;
-    display: flex;
-    flex-direction: column;
+body.dark_mode {
+    color: var(--primary-color);
 }
-
-.theme_button_container {
-    display: flex;
-    justify-content: center;
-}
-
-.dark_mode .nav-bar {
-    background-color: var(--primary-color);
-}
-
-.nav-bar {
-    /* background-color: rgb(121, 94, 139); */
-    background-color: var(--primary-color);
-    flex: 1;
-}
-
-*,
-:after,
-:before {
-    box-sizing: border-box;
-}
-
-nav {
-    display: flex;
-    border: solid rgb(255, 255, 255) 2px;
-    background-color: rgb(121, 94, 139);
+body.dark_mode p{
+    color: var(--primary-color);
 }
 
 a {
-    color: white;
-    border: cyan 2px solid;
+    color: var(--text);
 }
 
-p {
-    color: var(--primary-color)
-}
 
 a:hover {
-    color: pink;
+    background-color: pink;
 }
 
 h1 {
-    color: white;
+    font-family: var(--font-glitch);
 }
 
-.main_image {
-    border: green 2px solid;
-}
 
-main .hero {
-    border: red solid 2px;
-    /* porque? serio, POR QUE ESSA CRIAÇÂO DOS INFERNOS 
-    NAO TEM UM COMPILADOR???????????????? 
-    TOLERANTE A ERROS È MINHA TROLHA,
-    CSS ERA PRA SER COMPILADO POR NATUREZA, 
-    GRITE MEUS ERROS NA MINHA CARA,
-    ANTES DE ME FAZER DE IDIOTA POR MAIS DE DUAS HORAS
-    DUAS HORAS POR CAUSA DE UM ESPAÇO!!!!!
-    VAI TOMAR NO CU
-    PORRAAAAAA */
-    /* NOTE: Nunca mais, NUNCA MAIS esqueça de baixar um linter.
-    NOTE: Nunca mais mexa em CSS sem a porra de um linter! */
-    /* NOTE: A porra do linter não funciona sem um servidor node */
-    /* NOTE: Me mate */
-    width: 100%;
-    background-image: var(--lain); 
-    background-size: cover;
-    min-height: 100dvh;
-    padding-top: 4rem;
-
-}
 
 .resto {
     height: 200dvh;
