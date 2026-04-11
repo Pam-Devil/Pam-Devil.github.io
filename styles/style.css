@@ -181,10 +181,15 @@ h1, h2, h3, h4 {
   text-shadow: var(--glow);
 }
 
-p {
+body.dark_mode p {
   color: var(--text-dim);
+}
+
+p {
+  color: var(--bg);
   max-width: 900px;
 }
+
 
 hr {
   border: none;
@@ -239,6 +244,7 @@ li h3 {
 li p {
   margin: 0;
 }
+
 img {
   max-width: 100%;
   display: block;

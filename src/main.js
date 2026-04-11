@@ -1,7 +1,7 @@
 //TODO: Não usar NODEJS ou implementar algum tipo de servidor.
 //TODO: Não usar nenhuma dependencia externa. Reinventar a roda se for preciso.
 let toggle = false
-let dark_theme = true
+let dark_theme = false
 
 let img1 = "../media/img/lain4.gif"
 let img2 = "../media/img/lain3.gif"
