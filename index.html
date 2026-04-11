@@ -10,41 +10,46 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/hero.css">
 
-<!-- Fontes -->
+    <!-- Fontes -->
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+JP:wght@100..900&display=swap"
+        rel="stylesheet">
 
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+        rel="stylesheet">
 </head>
 <!-- Queria ter tido mais tempo pra trabalar nessa page.
  infelizmente acumulou coisa demais e não deu pra fazer tudo que eu queria. -->
-<body class="body" id="i_body">
+
+<body class="body landing" id="i_body">
     <header>
         <div class="header_container">
             <nav class="nav-bar">
                 <a href="./index.html">
-                    home
+                    <strong>HOME</strong>
                 </a>
                 <a href="./views/pages/servicos.html">
-                    servicos
+                    <strong>SERVIÇOS</strong>
                 </a>
                 <a href="./views/pages/curriculo.html">
-                    Curriculos
+                    <strong>CURRICULO</strong>
                 </a>
                 <a href="./views/pages/contato.html">
-                    Contato
+                    <strong>CONTATO</strong>
                 </a>
                 <a href="./views/pages/github.html">
-                    Github
+                    <strong>GITHUB</strong>
                 </a>
             </nav>
             <div class="theme_button_container">
                 <button class="theme-button" id="i_theme_button"
-                    onclick="call_event('change_theme',{})">theme_swap</button>
+                    onclick="call_event('change_theme',{})"><strong>TEMA</strong></button>
             </div>
         </div>
     </header>
@@ -54,25 +59,39 @@
                 <div class="content">
                     <h1>My Amazing Page</h1>
                     <h2>With more amazing things</h2>
-                    <button>Sup</button>
+                    <a href="./index.html">
+                        <button>HOME</button>
+                    </a>
                 </div>
 
             </div>
             <div class="text-overlay"></div>
             <div class="hero_button_overlay">
                 <div class="hero-swap-button">
-                    <h1>A</h1>
+                    <h1>❮</h1>
                 </div>
                 <div class="hero-swap-button">
-                    <h1>B</h1>
+                    <h1>❯</h1>
                 </div>
             </div>
             <div class="hero_radio">
                 <form action="">
-                    <input type="radio" name="op" id="op1" value="1" onclick="call_event('radio_click',{value:0})">
-                    <input type="radio" name="op" id="op2" value="2" onclick="call_event('radio_click',{value:1})">
-                    <input type="radio" name="op" id="op3" value="3" onclick="call_event('radio_click',{value:2})">
-                    <input type="radio" name="op" id="op4" value="4" onclick="call_event('radio_click',{value:3})">
+                    <label class="radio">
+                        <input type="radio" name="op" id="op1" value="1" onclick="call_event('radio_click',{value:0})">
+                        <span></span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="op" id="op2" value="2" onclick="call_event('radio_click',{value:1})">
+                        <span></span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="op" id="op3" value="3" onclick="call_event('radio_click',{value:3})">
+                        <span></span>
+                    </label>
+                    <label class="radio">
+                        <input type="radio" name="op" id="op4" value="4" onclick="call_event('radio_click',{value:0})">
+                        <span></span>
+                    </label>
                 </form>
             </div>
             <img id="i_foto" class="hero_image" src="./media/img/lain2.gif" alt="lain5.gif">

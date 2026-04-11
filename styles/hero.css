@@ -22,26 +22,24 @@ main .hero {
     width: 100%;
     background-size: cover;
     height: 100dvh;
-    overflow:hidden;
+    overflow: hidden;
 }
 
 .text-overlay {
-  position: absolute;
-  width: 100%;
-  height: auto;
-  inset: 0;
-  z-index: 2;
+    position: absolute;
+    width: 100%;
+    height: auto;
+    inset: 0;
+    z-index: 2;
 
-  background: linear-gradient(
-    to right,
-    rgba(0, 0, 0, 0.8),
-    rgba(0, 0, 0, 0.4),
-    rgba(0, 0, 0, 0)
-  );
-  backdrop-filter: blur(3px);
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.8),
+            rgba(0, 0, 0, 0.4),
+            rgba(0, 0, 0, 0));
+    backdrop-filter: blur(3px);
 }
 
-.hero img{
+.hero img {
     display: block;
     position: absolute;
     width: 100%;
@@ -56,7 +54,7 @@ main .hero {
     justify-content: space-between;
     align-items: center;
     pointer-events: none;
-    z-index: 2;        
+    z-index: 2;
 }
 
 .hero_button_overlay * {
@@ -75,8 +73,20 @@ main .hero {
 
 .hero-swap-button {
     height: 100%;
+    width: 4rem;
     display: flex;
     align-items: center;
+    justify-content: center;
+}
+
+.content {
+    text-align: center;
+}
+
+.content a {
+    width: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .hero-swap-button:hover {
@@ -84,7 +94,9 @@ main .hero {
     height: 100%;
     width: 4rem;
     background-color: var(--text-dim);
+    transition: 0.3s;
 }
+
 .hero-main-container {
     position: absolute;
     display: flex;
@@ -96,7 +108,37 @@ main .hero {
     padding-bottom: 15rem;
     padding-left: 1rem;
 }
-.hero-main-container h1, .hero-main-container h2 {
-   margin-top: 0;
-   margin-bottom: 0.2em; 
+
+.hero-main-container h1,
+.hero-main-container h2 {
+    margin-top: 0;
+    margin-bottom: 0.2em;
+}
+
+.radio input {
+    display: none;
+}
+
+.radio span {
+    width: 18px;
+    height: 18px;
+    margin-inline: 0.3em;
+    border-radius: 50%;
+
+    display: inline-block;
+    background: white;
+    cursor: pointer;
+
+    transition: 0.2s;
+}
+
+.radio input:hover+span {
+    border-color: var(--primary);
+    box-shadow: 0 0 12px rgba(57, 255, 136, 0.4);
+    transform: translateY(-1px);
+}
+
+.radio input:checked+span {
+    background: var(--primary);
+    box-shadow: 0 0 10px var(--primary);
 }
