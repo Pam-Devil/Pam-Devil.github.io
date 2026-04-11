@@ -7,6 +7,7 @@ header {
     top: 0;
     display: flex;
     justify-content: center;
+    background-color: var(--text-faint);
 }
 
 header, .header_container, .nav-bar {
@@ -14,8 +15,6 @@ header, .header_container, .nav-bar {
 }
 
 .header_container {
-    border-radius: 2px;
-    border-style: solid;
     background-color: var(--text-faint);
     pointer-events: none;
     display: flex;

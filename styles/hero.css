@@ -6,7 +6,6 @@
 
 main .hero {
     position: relative;
-    border: red solid 2px;
     /* porque? serio, POR QUE ESSA CRIAÇÂO DOS INFERNOS 
     NAO TEM UM COMPILADOR???????????????? 
     TOLERANTE A ERROS È MINHA TROLHA,
@@ -28,7 +27,7 @@ main .hero {
 
 .text-overlay {
   position: absolute;
-  width: 50%;
+  width: 100%;
   height: auto;
   inset: 0;
   z-index: 2;
@@ -84,7 +83,7 @@ main .hero {
     z-index: 1000000;
     height: 100%;
     width: 4rem;
-    background-color: burlywood;
+    background-color: var(--text-dim);
 }
 .hero-main-container {
     position: absolute;

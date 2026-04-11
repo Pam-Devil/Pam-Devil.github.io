@@ -85,23 +85,35 @@ body {
     background-size: cover;
 }
 
-body.dark_mode p{
-    color: var(--primary-color);
+h1 {
+    font-family: var(--font-glitch);
 }
-body.dark_mode {
-    color: var(--primary-color);
+h2 {
+    font-family: var(--font-glitch);
 }
-body.dark_mode p{
-    color: var(--primary-color);
+
+h3 {
+    color:var(--danger);
+    font-family: var(--font-glitch);
+}
+
+p {
+    font-family: var(--font-main);
+}
+
+li {
+    font-family: var(--font-mono);
 }
 
 a {
+    margin-inline: 0.5em;
+    font-family: var(--font-glitch);
     color: var(--text);
 }
 
 
 a:hover {
-    background-color: pink;
+    background-color: var(--text-dim);
 }
 
 h1 {
